@@ -3,75 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
     <title>Blog de Moda</title>
 </head>
 <body>
         <!-- barra de navegacion -->
         <header>
-            <div>
+            <div class="logo">
                 <a href="index.html">
-                    <img src="img/fashion_blog_logo.jpg" alt="Logo del Blog" width="150" height="auto">
+                    <img src="img/fashion_blog_logo.png" alt="Logo del Blog">
                 </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="tendencias.html">Tendencias</a></li>
-                    <li><a href="looks.html">Looks</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="tendencias.html" class="nav-link">Tendencias</a></li>
+                    <li><a href="looks.html" class="nav-link">Looks</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
         </header>
 
      <!-- Sección de un Banner -->
-    <section>
-        <img src="img/bannercompleto.jpg" alt="Banner de moda" width="1450" height="auto">
+    <section id="bannercompleto">
+        <img src="img/bannercompleto.jpg" alt="Banner de moda">
         <div>
             <h2>Descubre las últimas tendencias de moda</h2>
+            <button class="btntendencias" onclick="window.location.href='tendencias.html';">
+                Explorar tendencias
+              </button>
         </div>
     </section>
 
 
      <!-- Sección de publicaciones recientes -->
 
-    <section>
-        <h2>Publicaciones Recientes</h2>
-        <div>
-            <article>
-                <img src="img/publicacion1.jpg" alt="Publicación 1" width="400" height="auto">
+     <section class="contenedor">
+        
+        <div class="titulo-publicaciones">
+            <h2>Publicaciones Recientes</h2>
+        </div>
+        <div class="publicaciones-recientes">
+            <article class="tarjeta">
+                <img src="img/publicacion1.jpg" alt="Publicación 1">
                 <h3>Tendencias Otoño 2024: Colores y Estilos</h3>
-                <p>Conoce las principales tendencias de la temporada.</p>
-                <a href="#">Leer más...</a>
+                <p>Conoce las principales tendencias de la temporada. Este otoño, los colores más populares incluyen tonos tierra y cálidos, como marrones, ocres y naranjas. Las texturas también juegan un papel importante, desde tejidos suaves como el terciopelo hasta las telas más gruesas como el tweed. No olvides que las prendas con estampados florales y de cuadros son un must esta temporada. Es el momento perfecto para experimentar con capas y crear looks únicos y estilosos.</p>
             </article>
-              <br/>
-            <article>
-                <img src="img/publicacion2.jpg" alt="Publicación 2" width="400" height="auto">
+    
+            <article class="tarjeta">
+                <img src="img/publicacion2.jpg" alt="Publicación 2">
                 <h3>Cómo Crear un Look Casual</h3>
-                <p>Los mejores consejos para un look cómodo y con estilo.</p>
-                <a href="#">Leer más...</a>
+                <p>Los mejores consejos para un look cómodo y con estilo. Un look casual no tiene que ser aburrido. Desde las chaquetas de mezclilla hasta las camisetas con estampados creativos, hay muchas maneras de lograrlo. Lo importante es combinar bien los colores y no tener miedo de mezclar diferentes estilos. Añadir un par de zapatillas deportivas de calidad puede transformar tu atuendo en algo más moderno, mientras que los accesorios, como relojes o pulseras, te permiten darle un toque personal.</p>
             </article>
         </div>
     </section>
 
      <!-- Sección de Entradas Destacadas -->
-        <aside>
+        <aside  class="entradas-destacadas">
             <h2>Entradas Destacadas</h2>
-            <div>
-                <article>
+            <div class="tarjetas-container">
+                <article  class="tarjeta">
                     <h3>Mi top 10 de accesorios para esta temporada</h3>
-                    <p>Descubre mis accesorios favoritos de este año...<a href="#">Leer más</a></p>
+                    <p>Descubre mis accesorios favoritos de este año. Entre mis imprescindibles de la temporada se encuentran los bolsos de mano, los pendientes grandes y los collares dorados. Cada uno de estos accesorios tiene el poder de elevar cualquier look, ya sea para una ocasión casual o algo más formal. Los cinturones anchos están regresando y los anillos de gran tamaño se están viendo en todos los looks. Este año, la moda se trata de destacar lo más mínimo, y los accesorios juegan un papel esencial.</p>
                 </article>
+            </div>
+
+            <div class="sobre-blog tarjeta">
+                <h3>¿Sobre qué trata este blog?</h3>
+                <p>
+                    Este blog está dedicado a todo lo relacionado con el mundo de la moda. Aquí encontrarás las últimas tendencias, consejos de estilo, guías de compras y looks para diferentes ocasiones. Mi objetivo es inspirarte y ayudarte a encontrar tu propio estilo único.
+                </p>
             </div>
         </aside>
     
-        <!-- Sección de Acerca del blog -->
-        <aside>
-            <h2>¿Sobre qué trata este blog?</h2>
-            <p>Este blog está dedicado a todo lo relacionado con el mundo de la moda. Aquí encontrarás las últimas tendencias, consejos de estilo, guías de compras y looks para diferentes ocasiones. Mi objetivo es inspirarte y ayudarte a encontrar tu propio estilo único.</p>
-        </aside>
+
 
         <!-- Footer con Redes Sociales -->
-          <footer>
+          <footer class="footerfinal">
              <p>&copy; 2024 Blog de Moda | Todos los derechos reservados</p>
               <div>
                    <a href="https://facebook.com" target="_blank">

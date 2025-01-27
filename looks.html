@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Looks</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
 </head>
 <body>
 
-     <!-- barra de navegacion -->
-        <header>
-            <div>
+  <!-- barra de navegacion -->
+        <header class="colorpgsc">
+            <div class="logo">
                 <a href="index.html">
-                    <img src="img/fashion_blog_logo.jpg" alt="Logo del Blog" width="150" height="auto">
+                    <img src="img/fashion_blog_logo.png" alt="Logo del Blog">
                 </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="tendencias.html">Tendencias</a></li>
-                    <li><a href="looks.html">Looks</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="tendencias.html" class="nav-link">Tendencias</a></li>
+                    <li><a href="looks.html" class="nav-link">Looks</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
         </header>
+    
 
           <!-- Sección de Introducción -->
-           <section>
+           <section class="lookstext">
                 <h1>Explora los Mejores Looks de Moda</h1>
                 <p>Bienvenidos a nuestra sección de Looks, donde encontrarás las mejores combinaciones de prendas para cualquier ocasión. Desde looks casuales para el día a día hasta conjuntos elegantes para una noche especial, aquí te inspiramos a crear outfits únicos y a la moda. ¡Descubre cómo transformar tu estilo y marcar la diferencia con cada look!</p>
            </section>
@@ -33,38 +36,38 @@
            
         <!-- Sección de Looks -->
         <section>
-            <h2>Looks de Moda</h2>
-
-            <div>
+            <h2 class="lookstext">Looks de Moda</h2>
+         <div class="looks-container">
+            <div class="look-card">
                 <h3>Look Casual</h3>
-                <img src="img/look1.jpg" alt="Look casual" width="300" height="auto">
+                <img src="img/look1.jpg" alt="Look casual" >
                 <p>Este look combina una camisa blanca oversize con un top negro ajustado, perfecto para un estilo relajado pero con un toque moderno. Se complementa con unos jeans de corte recto y zapatillas blancas, ideales para el día a día. La bolsa negra grande añade practicidad y un toque chic. Este conjunto es perfecto para paseos casuales o reuniones informales.</p>
             </div>
 
-            <div>
+            <div class="look-card">
                 <h3>Look para la Oficina</h3>
-                <img src="img/look2.jpg" alt="Look de oficina" width="300" height="auto">
+                <img src="img/look2.jpg" alt="Look de oficina" >
                 <p>Un conjunto completamente negro monocromático, compuesto por un blazer corto ajustado y pantalones de pierna ancha, refleja sofisticación y minimalismo. El look es ideal para eventos formales o reuniones profesionales. Los accesorios discretos, como un bolso de mano con detalles dorados, completan el outfit de manera elegante y estilizada.</p>
             </div>
 
-            <div>
+            <div class="look-card">
                 <h3>Look de Noche</h3>
-                <img src="img/look3.jpg" alt="Look de noche" width="300" height="auto">
+                <img src="img/look3.jpg" alt="Look de noche">
                 <p>Un vestido negro de tirantes con una falda corta y con vuelo, ideal para eventos nocturnos o cenas elegantes. Las medias negras y los zapatos clásicos realzan la silueta, mientras que el peinado recogido y los pendientes largos aportan un toque refinado. El fondo arquitectónico agrega un aire de lujo a este look impresionante.</p>
             </div>
 
-            <div>
+            <div class="look-card">
                 <h3>Look Deportivo</h3>
-                <img src="img/look4.jpg" alt="Look deportivo" width="300" height="auto">
+                <img src="img/look4.jpg" alt="Look deportivo" >
                 <p>Combina un conjunto negro de top corto y leggings de cintura alta que resalta la figura con un diseño minimalista, ideal para actividades casuales o deportivas. Los accesorios, como la gorra negra con logotipo y las zapatillas deportivas blancas con un toque retro, añaden estilo y comodidad. Los calcetines blancos visibles aportan un aire relajado.</p>
             </div>
-
+         </div>
         </section>
 
         <!-- Sección de video -->
 
-        <section>
-            <h2>Descubre las últimas tendencias en moda</h2>
+        <section class="video-section">
+            <h2 class="lookstext">Descubre las últimas tendencias en moda</h2>
             <video controls width="300">
                 <source src="img/video1.mp4" type="video/mp4">
             </video>
@@ -72,7 +75,7 @@
 
 
         <!-- Footer con Redes Sociales -->
-        <footer>
+        <footer class="footerfinal">
             <p>&copy; 2024 Blog de Moda | Todos los derechos reservados</p>
              <div>
                   <a href="https://facebook.com" target="_blank">
